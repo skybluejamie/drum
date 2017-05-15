@@ -33,7 +33,7 @@ fashion to ``django-admin.py``. The wikipeace site can then be tested and modifi
     
 The site will then run locally and you can test and make changes to do it in the wikipeace repository. 
 Here we specify the ``-a`` switch for the ``mezzanine-project`` command,
-which tells it to use an alternative package (wikipeace) for the project
+which tells it to use an alternative package (drum) for the project
 template to use. Both Mezzanine and Drum contain a project template
 package containing the ``settings.py`` and ``urls.py`` modules for an
 initial project.
