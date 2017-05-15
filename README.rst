@@ -1,15 +1,6 @@
-.. image:: https://secure.travis-ci.org/stephenmcd/drum.png?branch=master
-   :target: http://travis-ci.org/stephenmcd/drum
-
-Drum
+Wikipeace
 ====
-
-Created by `Stephen McDonald <http://twitter.com/stephen_mcd>`_
-
-Drum is a Reddit / Hacker News clone, built using `Mezzanine`_
-and `Django`_. It is `BSD licensed`_, and designed to demonstrate
-some of the non-CMS capabilities of Mezzanine, such as threaded
-comments, ratings, and public user accounts.
+Wikipeace is a Wiki for all solutions, built using Drum https://github.com/stephenmcd/drum, which on turn is built using `Mezzanine`_.
 
 Check out the blog post `Building Social Apps with Mezzanine`_,
 which contains a detailed walk-through of how Drum was built. A
@@ -18,41 +9,32 @@ which contains a detailed walk-through of how Drum was built. A
 Dependencies
 ============
 
-Drum is designed as a plugin for the `Mezzanine`_ content management
-platform, and therefore requires `Mezzanine`_ to be installed. The
-integration of the two applications should occur automatically by
-following the installation instructions below.
+Wikipeace is a forked version of Drum and requires Mezzanine to also be installed. This repository is designed for contributors to update certain features for the site Wikipeace.
 
 Installation
 ============
 
-The easiest method is to install directly from PyPI using `pip`_ by
-running the command below, which will also install the required
-dependencies mentioned above::
-
-    $ pip install -U drum
-
-Otherwise, you can download Drum and install it directly from source::
-
-    $ python setup.py install
+Download this repository and run in terminal::
+     
+    $ git clone https://github.com/skybluejamie/wikipeace.git
+    $ cd wikipeace
+    $ python setup.py develop
 
 Once installed, the command ``mezzanine-project`` can be used to
 create a new Mezzanine project, with Drum installed, in similar
-fashion to ``django-admin.py``::
+fashion to ``django-admin.py``. The wikipeace site can then be tested and modified on your local machine::
 
-    # FIXME: add new instructions of how to create a project with drum
-    $ mezzanine-project -a drum project_name
+    # FIXME: add new instructions of how to create a project with wikipeace
+    $ mezzanine-project -a wikipeace project_name
     $ cd project_name
     $ python manage.py createdb --noinput
     $ python manage.py runserver
 
 Here we specify the ``-a`` switch for the ``mezzanine-project`` command,
-which tells it to use an alternative package (drum) for the project
+which tells it to use an alternative package (wikipeace) for the project
 template to use. Both Mezzanine and Drum contain a project template
 package containing the ``settings.py`` and ``urls.py`` modules for an
-initial project. If you'd like to add Drum to an existing Mezzanine
-or Django project, you'll need to manually configure these yourself. See
-the `FAQ section of the Mezzanine documentation`_ for more information.
+initial project.
 
 .. note::
 
@@ -125,65 +107,7 @@ unsaved ``Link`` object, and should return a sequence of tags to add.
 Contributing
 ============
 
-Drum is an open source project managed using both the Git and
-Mercurial version control systems. These repositories are hosted on
-both `GitHub`_ and `Bitbucket`_ respectively, so contributing is as
-easy as forking the project on either of these sites and committing
-back your enhancements.
-
-Please note the following guidelines for contributing:
-
-  * Contributed code must be written in the existing style. This is
-    as simple as following the `Django coding style`_ and (most
-    importantly) `PEP 8`_.
-  * Contributions must be available on a separately named branch
-    based on the latest version of the main branch.
-  * Run the tests before committing your changes. If your changes
-    cause the tests to break, they won't be accepted.
-  * If you are adding new functionality, you must include basic tests
-    and documentation.
-
-
-Donating
-========
-
-If you would like to make a donation to continue development of
-Drum, you can do so via the `Mezzanine Project`_ website.
 
 Support
 =======
 
-To report a security issue, please send an email privately to
-`security@jupo.org`_. This gives us a chance to fix the issue and
-create an official release prior to the issue being made
-public.
-
-For general questions or comments, please join the `mezzanine-users`_
-mailing list. To report a bug or other type of issue, please use the
-`GitHub issue tracker`_. And feel free to drop by the `#mezzanine
-IRC channel`_ on `Freenode`_, for a chat.
-
-Sites Using Drum
-================
-
-* `Food News <http://food.hypertexthero.com>`_
-
-.. _`Building Social Apps with Mezzanine`: http://blog.jupo.org/2013/04/30/building-social-apps-with-mezzanine-drum/
-.. _`Django`: http://djangoproject.com/
-.. _`BSD licensed`: http://www.linfo.org/bsdlicense.html
-.. _`live demo of Drum`: http://drum.jupo.org/
-.. _`Mezzanine`: http://mezzanine.jupo.org/
-.. _`Mezzanine Project`: http://mezzanine.jupo.org/
-.. _`pip`: http://www.pip-installer.org/
-.. _`FAQ section of the Mezzanine documentation`: http://mezzanine.jupo.org/docs/frequently-asked-questions.html#how-can-i-add-mezzanine-to-an-existing-django-project
-.. _`Django coding style`: http://docs.djangoproject.com/en/dev/internals/contributing/#coding-style
-.. _`PEP 8`: http://www.python.org/dev/peps/pep-0008/
-.. _`feedparser`: http://code.google.com/p/feedparser/
-.. _`topia.termextract`: https://pypi.python.org/pypi/topia.termextract/
-.. _`Github`: http://github.com/stephenmcd/drum/
-.. _`Bitbucket`: http://bitbucket.org/stephenmcd/drum/
-.. _`Github issue tracker`: http://github.com/stephenmcd/drum/issues
-.. _`security@jupo.org`: mailto:security@jupo.org?subject=Mezzanine+Security+Issue
-.. _`mezzanine-users`: http://groups.google.com/group/mezzanine-users
-.. _`#mezzanine IRC channel`: irc://freenode.net/mezzanine
-.. _`Freenode`: http://freenode.net
