@@ -106,7 +106,7 @@ unsaved ``Link`` object, and should return a sequence of tags to add.
 
 Contributing
 ============
-
+Information to come soon
 
 Support
 =======
