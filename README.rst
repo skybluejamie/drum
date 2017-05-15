@@ -17,19 +17,19 @@ Installation
 Create a virtualenv, download this repository and run in terminal::
     
     $ source activate "virtualenv_name"
-    $ git clone https://github.com/skybluejamie/wikipeace.git
-    $ cd wikipeace
-    $ python setup.py develop
+    (virtualenv_name) $ git clone https://github.com/skybluejamie/wikipeace.git
+    (virtualenv_name) $ cd wikipeace
+    (virtualenv_name) $ python setup.py develop
 
 Once installed, the command ``mezzanine-project`` can be used to
 create a new Mezzanine project, with Drum installed, in similar
 fashion to ``django-admin.py``. The wikipeace site can then be tested and modified on your local machine::
 
     # FIXME: add new instructions of how to create a project with wikipeace
-    $ mezzanine-project -a drum project_name
-    $ cd project_name
-    $ python manage.py createdb --noinput
-    $ python manage.py runserver
+    (virtualenv_name) $ mezzanine-project -a drum project_name
+    (virtualenv_name) $ cd project_name
+    (virtualenv_name) $ python manage.py createdb --noinput
+    (virtualenv_name) $ python manage.py runserver
     
 The site will then run locally and you can test and make changes to do it in the wikipeace repository. 
 Here we specify the ``-a`` switch for the ``mezzanine-project`` command,
